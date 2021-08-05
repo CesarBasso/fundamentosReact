@@ -1,12 +1,14 @@
-import React from "react"
+import React from "react";
 
 export default function ComParametro(props) {
-    const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação'
-    return (
-        <div>
-            <h2>{ props.titulo }</h2>
-            <p>{ props.nome } tem nota { props.nota }</p>
-            <p>e está { status }</p>
-        </div>
-    )
+  const status = props.nota >= 7 ? "Aprovado" : "Recuperação";
+  return (
+    <div>
+      <h2>{props.titulo}</h2>
+      <p>
+        {props.nome} tem nota {props.nota}
+      </p>
+      <p>e está {status}</p>
+    </div>
+  );
 }
